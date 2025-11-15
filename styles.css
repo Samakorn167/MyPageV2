@@ -1,0 +1,176 @@
+/* การตั้งค่าพื้นฐาน */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* สีพื้นหลังอ่อนๆ */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff; /* สีน้ำเงินสดใส */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header a.contact-button {
+    background-color: #28a745; /* ปุ่มสีเขียว */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+header a.contact-button:hover {
+    background-color: #218838;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* สไตล์ Heading */
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* --- ส่วน Profile Table (index.html) --- */
+.profile-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.profile-section td {
+    padding: 15px;
+    vertical-align: top;
+}
+
+/* ทำให้รูป Profile เป็นวงกลม */
+.profile-img-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    border: 4px solid #007bff;
+    margin-right: 20px; /* เว้นระยะจาก Text (Challenge: ทำให้รูปกับ Text ห่างกัน) */
+    /* ใช้ margin-right ใน .profile-img-container หรือ padding/margin ใน .profile-info-cell */
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่โดยไม่เสียสัดส่วน */
+    display: block; /* แก้ปัญหาช่องว่างด้านล่างของรูปภาพที่เป็น inline element */
+}
+
+.profile-pic-cell {
+    width: 20%; /* กำหนดความกว้างสำหรับรูปภาพ */
+    padding-right: 20px; 
+}
+
+/* --- ส่วน Skills Table (index.html) --- */
+.skills-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.skills-section th, .skills-section td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.skills-section th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* --- ส่วน Contact.html Lists --- */
+.contact-info ul {
+    list-style-type: none; /* ลบหัว bullet */
+    padding: 0;
+}
+
+.contact-info li {
+    background-color: #e9ecef;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+/* --- ส่วน Contact Form (contact.html) --- */
+.contact-form div {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* ทำให้ padding ไม่เพิ่มขนาดโดยรวม */
+}
+
+.contact-form textarea {
+    resize: vertical; /* อนุญาตให้ปรับขนาดแนวตั้งเท่านั้น */
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ffc107; /* สีเหลืองทอง */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
